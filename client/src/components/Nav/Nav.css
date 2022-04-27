@@ -1,3 +1,15 @@
-.nav{
-    
+.nav {
+    background-image: linear-gradient(to bottom right, rgb(53, 2, 85), rgb(190, 173, 230));
+    color: rgb(2, 2, 85);
+    box-shadow: 0 5px 15px lightcyan;
+    display: flex;
+  flex-direction: row;
+  flex: 2;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  border-top: solid lightgrey 3px;
+  border-bottom: solid lightgrey 3px;
 }

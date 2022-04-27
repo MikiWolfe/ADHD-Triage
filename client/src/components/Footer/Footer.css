@@ -1,0 +1,29 @@
+.foot {
+    background-image: linear-gradient(to bottom right, rgb(53, 2, 85), rgb(190, 173, 230));
+    color: rgb(2, 2, 85);
+    box-shadow: 0 5px 15px lightcyan;
+    display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-top: solid lightgrey 3px;
+  border-bottom: solid lightgrey 3px;
+  
+}
+
+.link {
+  font-size: 48px;
+  color: whitesmoke;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.made {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}

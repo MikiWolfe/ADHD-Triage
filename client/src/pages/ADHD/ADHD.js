@@ -1,6 +1,12 @@
 import React from "react";
 import './ADHD.css'
 
+
+// Array for tasks:
+const randomTask = [
+
+]
+
 export default function ADHD () {
     return(
         <div>
@@ -8,7 +14,7 @@ export default function ADHD () {
 
             <h3> Be assigned a task from a random array: </h3>
 
-
+<button>Surprise Me! </button>
 
             <h1> OR</h1>
 
