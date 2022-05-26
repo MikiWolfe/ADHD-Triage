@@ -1,7 +1,11 @@
 import React from "react";
-import "./Home.css";
+import { useNavigate } from "react-router-dom";
+import "./FrontPage.css";
 
-export default function Home() {
+export default function FrontPage() {
+
+  const navigate = useNavigate()
+
   return (
     <div>
       <h1>Welcome to the ADHD Triage Board</h1>
@@ -14,7 +18,7 @@ export default function Home() {
         accomplish in a day and you will be assigned a task at random. We will
         also link it to sound to help you stay on track.
       </p>
-      <button> Press enter to start: </button>
+      <button onClick={() => navigate('/home')}> Press enter to start: </button>
     </div>
   );
 }

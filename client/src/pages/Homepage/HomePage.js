@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "./ADHD.css";
+import "./HomePage.css";
 
 // Array for tasks:
 const tasks = [
