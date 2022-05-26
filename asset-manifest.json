@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ADHD-Triage/static/css/main.a9cfde09.css",
+    "main.js": "/ADHD-Triage/static/js/main.b3f7ff98.js",
+    "index.html": "/ADHD-Triage/index.html",
+    "main.a9cfde09.css.map": "/ADHD-Triage/static/css/main.a9cfde09.css.map",
+    "main.b3f7ff98.js.map": "/ADHD-Triage/static/js/main.b3f7ff98.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9cfde09.css",
+    "static/js/main.b3f7ff98.js"
+  ]
+}
