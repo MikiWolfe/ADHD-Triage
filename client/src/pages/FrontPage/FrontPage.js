@@ -10,7 +10,7 @@ export default function FrontPage() {
     <div>
       <h1>Welcome to the ADHD Triage Board</h1>
       <p>
-        Do you suffer from task over load and don't know which task to tackle
+        Do you suffer from executive dysfunction also known as task overload and don't know which task to tackle
         first? We have an application for you! We have a way for you to be
         assigned a task and given a time to finish it to help users not get lost
         in time blindness or get distracted in TikTok time loops or doom
