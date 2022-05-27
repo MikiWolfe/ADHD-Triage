@@ -1,10 +1,18 @@
 import React from "react";
-import './Nav.css'
+import { useNavigate } from "react-router-dom";
+import "./Nav.css";
+
 export default function Nav() {
-  return <nav className="nav">
-      <a> Log in
+  const navigate = useNavigate();
 
-      </a>
+  return (
+    <nav className="nav">
+    <a className="nav-link" onClick={() => navigate("/")}>   Front Page </a>
 
-  </nav>;
+      <a className="nav-link" onClick={() => navigate("/home")}> Home </a>
+
+      <a className="nav-link" onClick={() => navigate("/about")}> About Me  </a>
+    </nav>
+  );
 }
+

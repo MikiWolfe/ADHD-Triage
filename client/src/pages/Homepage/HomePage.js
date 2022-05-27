@@ -1,4 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import Nav from "../../components/Nav/Nav";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer.js";
 import "./HomePage.css";
 
 // Array for tasks:
@@ -26,39 +29,71 @@ const tasks = [
   { task: "Brush or comb your hair", value: "hair" },
 ];
 
+
 export default function ADHD() {
-  const [tasks, setIndex] = useState(0)
-  
-  function changeTask() {
-    let newIndex = Math.floor(Math.random() * (tasks.length - 0 )+ 0)
-    setIndex(newIndex)
+  const [show, setShow] = useState(false);
+  const [task, setTask] = useState("");
+
+  function changeTask(props) {
+    const randomTask = tasks[Math.floor(Math.random() * tasks.length)];
+    console.log(randomTask.task);
+    const returnedRandomTask = randomTask.task;
+    console.log(returnedRandomTask);
+    return returnedRandomTask.map((task, i) => (
+      <li key={i}>{task}</li>
+  ))
   }
+
+  function addCustomTask(e) {
+    e.preventDefault();
+    setTask("")
+  }
+
+  function displayCustomTask() {
+const customTask = localStorage.getItem('addedTask') ? JSON.parse(localStorage.getItem('addedTask')) : []
+return customTask
+
+  }
+
   return (
+    <>
+      <Nav />
+      <Header />
       <div>
-    <div>
-      <h1> What tasks can we accomplish today?</h1>
+        <div>
+          <h2> What household tasks can we accomplish today?</h2>
 
-      <h3> Be assigned a task from a pre-made list : </h3>
+          <h3> Be assigned a task from a pre-made list : </h3>
 
-      <button onClick={changeTask}>Surprise Me! </button>
-      <p >{tasks.task}</p>
-      <h1> OR</h1>
+          <button className="home-btn" onClick={changeTask}>Surprise Me! </button>
+          <ul>
+            
+          </ul>
 
-      <h3> Enter in your own and be assigned one at random: </h3>
-      <button>Randomize Me </button>
-    </div>
-    <div> 
-        <h3>How much time would you like to spend on your task?</h3>
-        <form>
-            <textarea>
+          {/* <button>Try again?</button> */}
 
-            </textarea>
-            <button>Submit</button>
-        </form>
+          <h1> OR</h1>
 
-    </div>
+          <form>
+            <h3>
+              {" "}
+              Enter in your own tasks and then be assigned one at random:{" "}
+            </h3>
+            <input
+              type="text"
+              placeholder="Add your own task:"
+              value={task}
+              onChange={(e) => setTask(e.target.value)}
+            />
 
-</div>
-
+            <button className="add-btn" onClick={addCustomTask}>Add custom task </button>
+          </form>
+          <p> All done? </p>
+          <button className="home-btn" onClick={displayCustomTask}> Randomize Me! </button>
+          <ul></ul>
+        </div>
+      </div>
+      <Footer />
+    </>
   );
 }

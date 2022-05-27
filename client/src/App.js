@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import FrontPage from "./pages/FrontPage/FrontPage";
 import HomePage from './pages/Homepage/HomePage'
+import About from './pages/About/About'
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<FrontPage />} />
         <Route path ='/home'element ={<HomePage/>} />
+        <Route path = '/about' element={<About/>} />
         <Route
           path="*"
           element={
@@ -17,6 +19,7 @@ export default function App() {
               <h1>404 !</h1> <h2>Page not found</h2>{" "}
             </div>
           }
+        
         />
       </Routes>
     </>

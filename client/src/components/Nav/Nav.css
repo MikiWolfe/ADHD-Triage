@@ -13,3 +13,12 @@
   border-top: solid lightgrey 3px;
   border-bottom: solid lightgrey 3px;
 }
+
+.nav-link{
+  cursor: pointer;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 28px;
+  font-weight: 900;
+
+}
