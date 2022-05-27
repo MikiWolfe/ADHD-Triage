@@ -65,7 +65,7 @@ return customTask
 
           <h3> Be assigned a task from a pre-made list : </h3>
 
-          <button onClick={changeTask}>Surprise Me! </button>
+          <button className="home-btn" onClick={changeTask}>Surprise Me! </button>
           <ul>
             
           </ul>
@@ -86,10 +86,10 @@ return customTask
               onChange={(e) => setTask(e.target.value)}
             />
 
-            <button onClick={addCustomTask}>Add custom task </button>
+            <button className="add-btn" onClick={addCustomTask}>Add custom task </button>
           </form>
           <p> All done? </p>
-          <button onClick={displayCustomTask}> Randomize Me! </button>
+          <button className="home-btn" onClick={displayCustomTask}> Randomize Me! </button>
           <ul></ul>
         </div>
       </div>

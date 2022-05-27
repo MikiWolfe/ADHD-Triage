@@ -7,11 +7,11 @@ export default function Nav() {
 
   return (
     <nav className="nav">
-      <a> <button onClick={() => navigate("/")}> Front Page </button> </a> 
+    <a className="nav-link" onClick={() => navigate("/")}>   Front Page </a>
 
-      <a> <button onClick={() => navigate("/home")}> Home Page </button> </a>
+      <a className="nav-link" onClick={() => navigate("/home")}> Home </a>
 
-      <a> <button onClick={() => navigate("/about")}> About Me </button> </a>
+      <a className="nav-link" onClick={() => navigate("/about")}> About Me  </a>
     </nav>
   );
 }

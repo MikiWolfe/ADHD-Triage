@@ -15,9 +15,9 @@ export default function FrontPage() {
         it to help users not get lost in time blindness or get distracted in
         TikTok time loops or doom scrolling on Twitter. Enter in what activities
         that you need to do accomplish in a day and you will be assigned a task
-        at random. We will also link it to sound to help you stay on track.
+        at random. 
       </p>
-      <button onClick={() => navigate("/home")}> Press enter to start! </button>
+      <button className="enter-btn" onClick={() => navigate("/home")}> Press enter to start! </button>
     </div>
   );
 }

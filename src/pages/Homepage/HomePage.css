@@ -1,0 +1,29 @@
+.home-btn {
+    cursor: pointer;
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px;
+    font-weight: 700;
+    border: 1px red solid;
+}
+
+.home-btn:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+    color:black
+}
+.add-btn {
+    cursor: pointer;
+    font-weight: 700;
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px;
+    border: 1px yellow solid;
+}
+
+.add-btn:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+    color:black
+}
+
