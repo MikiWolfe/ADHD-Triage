@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/adhd-triage/static/css/main.6473b951.css",
-    "main.js": "/adhd-triage/static/js/main.7ca8536d.js",
+    "main.css": "/adhd-triage/static/css/main.011b4fee.css",
+    "main.js": "/adhd-triage/static/js/main.523dae25.js",
     "index.html": "/adhd-triage/index.html",
-    "main.6473b951.css.map": "/adhd-triage/static/css/main.6473b951.css.map",
-    "main.7ca8536d.js.map": "/adhd-triage/static/js/main.7ca8536d.js.map"
+    "main.011b4fee.css.map": "/adhd-triage/static/css/main.011b4fee.css.map",
+    "main.523dae25.js.map": "/adhd-triage/static/js/main.523dae25.js.map"
   },
   "entrypoints": [
-    "static/css/main.6473b951.css",
-    "static/js/main.7ca8536d.js"
+    "static/css/main.011b4fee.css",
+    "static/js/main.523dae25.js"
   ]
 }
