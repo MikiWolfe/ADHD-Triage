@@ -20,5 +20,12 @@
   color: whitesmoke;
   font-size: 28px;
   font-weight: 900;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  background-color: black;
+  color: whitesmoke;
 
 }
+

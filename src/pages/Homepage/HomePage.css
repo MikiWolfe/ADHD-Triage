@@ -27,3 +27,22 @@
     color:black
 }
 
+.caution {
+    background-color: rgb(227, 130, 130);
+  padding: 0.5%;
+}
+
+.caution-btn {
+    cursor: pointer;
+    font-weight: 700;
+    background-color: rgb(121, 24, 24);
+    color: whitesmoke;
+    padding: 5px;
+    border: 1px black solid;
+}
+
+.caution-btn:hover {
+    cursor: pointer;
+    background-color: red;
+    color:black
+}
