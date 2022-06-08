@@ -1,0 +1,29 @@
+.list {
+    padding-top: 2%;
+    font-size: 20px;
+    /* visibility: hidden; */
+
+}
+/* .form {
+     
+} */
+.text-box {
+    height: 20px;
+width: 250px;
+margin: 3%; 
+}
+.add-btn {
+    cursor: pointer;
+    font-weight: 700;
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px;
+    border: 1px yellow solid;
+   margin-left: 8%;
+}
+
+.add-btn:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+    color:black
+}
