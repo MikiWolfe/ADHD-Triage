@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./List.css";
 
 // Array for tasks:
 const tasks = [
@@ -41,14 +42,16 @@ export default function TaskList() {
     setTime(time);
   }
   return (
-    <>
-      <button className="home-btn" onClick={handelClick}>
+    <>  <button className="home-btn" onClick={handelClick}>
         Surprise Me!{" "}
-      </button>
+              </button>
 
-      <li>
-        {task} for {time} minutes or (until complete).
-      </li>
+      <ul visibility="false">
+        <li className="list">
+          {task} for {time} minutes or (until complete).
+        </li>
+      </ul>
+      <p>Try again for another task!</p>
     </>
   );
 }
