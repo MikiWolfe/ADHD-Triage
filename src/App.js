@@ -14,7 +14,7 @@ export default function App() {
         <Route path ='/home'element ={<HomePage/>} />
         <Route path = '/about' element={<About/>} />
         {/* <Route path = '/custom' element={<CustomTask/>}/> */}
-        <Route
+        {/* <Route
           path="*"
           element={
             <div>
@@ -22,7 +22,7 @@ export default function App() {
             </div>
           }
         
-        />
+        /> */}
       </Routes>
     </>
   );
